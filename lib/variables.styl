@@ -3,31 +3,16 @@
  * Variables to customize the look and feel of Bootstrap
  */
 
-lighten-fixed($color, $percent)
-  $h = hue($color)
-  $s = saturation($color)
-  $l = lightness($color)
-  $l += $percent
-  rgb(hsl($h,$s,$l))
-
-darken-fixed($color, $percent)
-  $h = hue($color)
-  $s = saturation($color)
-  $l = lightness($color)
-  $l -= $percent
-  rgb(hsl($h,$s,$l))
-
-
 // Links
 $linkColor ?=         #0069d6
-$linkColorHover ?=    darken-fixed($linkColor, 15)
+$linkColorHover ?=    darken($linkColor, 15)
 
 // Grays
 $black ?=             #000
-$grayDark ?=          lighten-fixed($black, 25%)
-$gray ?=              lighten-fixed($black, 50%)
-$grayLight ?=         lighten-fixed($black, 75%)
-$grayLighter ?=       lighten-fixed($black, 90%)
+$grayDark ?=          lighten($black, 25%)
+$gray ?=              lighten($black, 50%)
+$grayLight ?=         lighten($black, 75%)
+$grayLighter ?=       lighten($black, 90%)
 $white ?=             #ffffff
 
 // Accent Colors

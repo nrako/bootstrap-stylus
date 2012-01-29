@@ -458,7 +458,7 @@ footer
   // Button Base
   cursor: pointer
   display: inline-block
-  gradient-vertical-three-colors(#ffffff, #ffffff, 25%, darken-fixed(#ffffff, 10%)) // Don't use .gradientbar() here since it does a three-color gradient
+  gradient-vertical-three-colors(#ffffff, #ffffff, 25%, darken(#ffffff, 10%))
   padding: 5px 14px 6px
   text-shadow: 0 1px 1px rgba(255,255,255,.75)
   color: #333
@@ -581,7 +581,7 @@ input[type=submit].btn
     box-shadow(0 1px 0 rgba(255,255,255,.25))
   &.block-message 
     background-image: none
-    background-color: lighten-fixed(#fceec1, 5%)
+    background-color: lighten(#fceec1, 5%)
     reset-filter()
     padding: 14px
     border-color: #fceec1
@@ -600,14 +600,14 @@ input[type=submit].btn
       color: $grayDark
       text-shadow: 0 1px 0 rgba(255,255,255,.5)
     &.error 
-      background-color: lighten-fixed(#f56a66, 25%)
-      border-color: lighten-fixed(#f56a66, 20%)
+      background-color: lighten(#f56a66, 25%)
+      border-color: lighten(#f56a66, 20%)
     &.success 
-      background-color: lighten-fixed(#62c462, 30%)
-      border-color: lighten-fixed(#62c462, 25%)
+      background-color: lighten(#62c462, 30%)
+      border-color: lighten(#62c462, 25%)
     &.info 
-      background-color: lighten-fixed(#6bd0ee, 25%)
-      border-color: lighten-fixed(#6bd0ee, 20%)
+      background-color: lighten(#6bd0ee, 25%)
+      border-color: lighten(#6bd0ee, 20%)
     // Change link color back
     &.danger p a,
     &.error p a,
@@ -641,7 +641,7 @@ input[type=submit].btn
     text-decoration: none
   a:hover,
   .active a 
-    background-color: lighten-fixed($blue, 45%)
+    background-color: lighten($blue, 45%)
   .disabled a,
   .disabled a:hover 
     background-color: transparent
@@ -874,7 +874,7 @@ popoverArrow-right(arrowWidth = 5px)
   &.success
     background-color: $green 
   &.notice
-    background-color: lighten-fixed($blue, 25%) 
+    background-color: lighten($blue, 25%) 
 
 // MEDIA GRIDS
 // -----------

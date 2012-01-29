@@ -163,8 +163,8 @@ formFieldState(textColor = #555, borderColor = #ccc, backgroundColor =#f5f5f5)
     color: textColor
     border-color: borderColor
     &:focus
-      border-color: darken-fixed(borderColor, 10%)
-      box-shadow(0 0 6px lighten-fixed(borderColor, 20%))
+      border-color: darken(borderColor, 10%)
+      box-shadow(0 0 6px lighten(borderColor, 20%))
   // Give a small background color for input-prepend/-append
   .input-prepend .add-on,
   .input-append .add-on
@@ -174,15 +174,15 @@ formFieldState(textColor = #555, borderColor = #ccc, backgroundColor =#f5f5f5)
 
 // Error
 form .clearfix.error
-  formFieldState(#b94a48, #ee5f5b, lighten-fixed(#ee5f5b, 30%))
+  formFieldState(#b94a48, #ee5f5b, lighten(#ee5f5b, 30%))
   
 // Warning
 form .clearfix.warning
-  formFieldState(#c09853, #ccae64, lighten-fixed(#CCAE64, 5%))
+  formFieldState(#c09853, #ccae64, lighten(#CCAE64, 5%))
 
 // Success
 form .clearfix.success
-  formFieldState(#468847, #57a957, lighten-fixed(#57a957, 30%))
+  formFieldState(#468847, #57a957, lighten(#57a957, 30%))
 
 
 // Form element sizes
@@ -349,7 +349,7 @@ textarea[readonly]
     text-shadow: 0 1px 0 $white
     border-radius(3px 0 0 3px)
   .active
-    background: lighten-fixed($green, 30)
+    background: lighten($green, 30)
     border-color: $green
 
 .input-prepend
